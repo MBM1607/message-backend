@@ -34,7 +34,7 @@ def post_message(sms: Sms, settings: Settings = Depends(get_settings)):
     client = Client(settings.access_key)
     message = client.message_create(
         settings.originator,
-        "+923365859518",
+        "+923334601116",
         sms.message,
         {"reference": "Foobar", "type": "flash"},
     )
